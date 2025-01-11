@@ -1,41 +1,45 @@
-Automatic Installation Script for Docker and Docker Compose
+### Automatic Installation Script for Docker and Docker Compose
 
 This script automates the process of installing Docker and Docker Compose on an Ubuntu system. It follows a structured step-by-step approach, ensuring all dependencies and configurations are properly handled.
 
-Steps in the Script:
-Update the Package Index:
+#### Steps in the Script:
 
-The script starts by updating the package index to ensure all repositories are up-to-date.
-Install Required Dependencies:
+1. **Update the Package Index**:
+   - The script starts by updating the package index to ensure all repositories are up-to-date.
 
-Installs essential tools like curl, ca-certificates, and software-properties-common.
-Add Docker's GPG Key:
+2. **Install Required Dependencies**:
+   - Installs essential tools like `curl`, `ca-certificates`, and `software-properties-common`.
 
-Downloads and adds Docker's official GPG key to ensure the authenticity of the Docker packages.
-Set Up the Docker Repository:
+3. **Add Docker's GPG Key**:
+   - Downloads and adds Docker's official GPG key to ensure the authenticity of the Docker packages.
 
-Adds Docker's stable repository to the system's package manager.
-Update the Package Index Again:
+4. **Set Up the Docker Repository**:
+   - Adds Docker's stable repository to the system's package manager.
 
-Updates the package index to include Docker's repository.
-Install Docker Engine:
+5. **Update the Package Index Again**:
+   - Updates the package index to include Docker's repository.
 
-Installs Docker Engine, CLI, and containerd.io.
-Verify Docker Installation:
+6. **Install Docker Engine**:
+   - Installs Docker Engine, CLI, and `containerd.io`.
 
-Confirms that Docker is installed correctly by checking its version.
-Optional: Configure Non-Root User Access:
+7. **Verify Docker Installation**:
+   - Confirms that Docker is installed correctly by checking its version.
 
-Adds the current user to the Docker group to enable running Docker commands without sudo.
-Enable and Start Docker Service:
+8. **Optional: Configure Non-Root User Access**:
+   - Adds the current user to the Docker group to enable running Docker commands without `sudo`.
 
-Configures Docker to start automatically on system boot and starts the service.
-Install Docker Compose:
+9. **Enable and Start Docker Service**:
+   - Configures Docker to start automatically on system boot and starts the service.
 
-Downloads the latest version of Docker Compose from GitHub and makes it executable.
-Verify Docker Compose Installation:
+10. **Install Docker Compose**:
+    - Downloads the latest version of Docker Compose from GitHub and makes it executable.
 
-Checks the installed Docker Compose version to confirm successful installation.
-Final Step:
+11. **Verify Docker Compose Installation**:
+    - Checks the installed Docker Compose version to confirm successful installation.
 
-Informs the user to log out and back in to apply group changes for non-root Docker access.
+12. **Final Step**:
+    - Informs the user to log out and back in to apply group changes for non-root Docker access.
+
+---
+
+This script simplifies the manual installation process by automating each step and providing logs for transparency. After executing the script, both Docker and Docker Compose will be ready for use. If needed, the user can edit the script to tailor it to specific Ubuntu versions or configurations.
