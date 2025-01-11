@@ -1,4 +1,5 @@
 Automatic Installation Script for Docker and Docker Compose
+
 This script automates the process of installing Docker and Docker Compose on an Ubuntu system. It follows a structured step-by-step approach, ensuring all dependencies and configurations are properly handled.
 
 Steps in the Script:
